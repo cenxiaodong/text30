@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 编码格式 -->
+    <meta charset="UTF-8">
+    <!-- 为了让ie浏览器使用最新的渲染引擎进行页面的渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动端视口配置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <title>Document</title>
+    <!-- 框架的核心样式问文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 头部css样式 -->
+    <link rel="stylesheet" href="./css/wjsindex.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            
+            <!-- 用于移动端展示 -->
+            <div class="navbar-header">
+                <!-- data-target="#bs-example-navbar-collapse-1这个是手风琴菜单 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <!-- sr-only:screen reader(屏幕阅读器) -->
+                    <span class="sr-only">Toggle navigation</span>
+                    <!-- 手风琴菜单里面显示的横杠 -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span class="wjs_icon wjs_icon_logo"></span>
+                    <span class="wjs_icon wjs_icon_text"></span>
+                </a>
+            </div>
+
+            <!-- PC端展示 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">我要投资<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">新手专区</a></li>
+                    <li><a href="#">最新动态</a></li>
+                    <li><a href="#">微平台</a></li>
+               
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">个人中心</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- bootstrap依赖于jquery,必须放前面 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 加载所有的bootstrap插件 -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

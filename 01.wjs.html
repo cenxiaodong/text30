@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 编码格式 -->
+    <meta charset="UTF-8">
+    <!-- 为了让ie浏览器使用最新的渲染引擎进行页面的渲染 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 移动端视口配置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./lib/respond/respond.js"></script>
+    <title>Document</title>
+    <!-- 框架的核心样式问文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <!-- 头部css样式 -->
+    <link rel="stylesheet" href="./css/wjsindex.css">
+    <!-- 微金所图标 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/nav.css">
+
+</head>
+<style>
+    .pcimg {
+        width: 100%;
+        height: 380px;
+        display: block;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mobileImg {
+        width: 100%;
+        display: block;
+    }
+
+    .mobileImg>img {
+        width: 100%;
+        display: block;
+    }
+</style>
+
+<body>
+    <!-- 1.微金所头部 -->
+    <div class="wjs_header">
+        <div class="container">
+            <div class="row  hidden-xs hidden-sm">
+                <div class="col-md-2">
+                    <a href="#" class="wjs_head">
+                        <span class="glyphicon glyphicon-phone"></span>
+                        <span>手机微金所</span>
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                        <img src="./images/code.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <span class="glyphicon glyphicon-phone-alt"></span>
+                    <span>4006-89-4875 (服务时间: 9:00~ 21:00)</span>
+                    <span>联系在线客服</span>
+                </div>
+                <div class="col-md-2">
+                    <a href="#">常见问题</a>
+                    <a href="#">财富登录</a>
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-danger">免费注册</button>
+                    <button type="button" class="btn btn-link">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2.微金所导航栏 -->
+    <nav class="navbar navbar-default" id="wjs_nav">
+        <div class="container">
+            <!-- 用于移动端展示 -->
+            <div class="navbar-header">
+                <!-- data-target="#bs-example-navbar-collapse-1这个是手风琴菜单 -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <!-- sr-only:screen reader(屏幕阅读器) -->
+                    <span class="sr-only">Toggle navigation</span>
+                    <!-- 手风琴菜单里面显示的横杠 -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span class="wjs_icon wjs_icon_logo"></span>
+                    <span class="wjs_icon wjs_icon_text"></span>
+                </a>
+            </div>
+
+            <!-- PC端展示 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav hidden-sm">
+                    <li class=""><a href="#">我要投资<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">我要借贷</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">新手专区</a></li>
+                    <li><a href="#">最新动态</a></li>
+                    <li><a href="#">微平台</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">个人中心</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3.轮播图 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators(分页器，点标记)-->
+        <!-- data-slide-to单击跳转到图片索引 -->
+        <ol class="carousel-indicators">
+
+        </ol>
+
+        <!-- 轮播图图片 -->
+        <div class="carousel-inner wjs_tu" role="listbox">
+
+        </div>
+        <!-- 左右按钮 -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- 5.新闻块 -->
+    <div class="wjs_new">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2 wjs_newtitle">
+                    <h3>全部新闻</h3>
+                </div>
+                <div class="col-md-1">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                <span class="wjs_icon wjs_icon_new01"></span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                <span class="wjs_icon wjs_icon_new02"></span>
+
+                            </a></li>
+                        <li role="presentation" class="">
+                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                                <span class="wjs_icon wjs_icon_new03"></span>
+
+                            </a></li>
+                        <li role="presentation" class="">
+                            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                                <span class="wjs_icon wjs_icon_new04"></span>
+
+                            </a></li>
+                    </ul>
+                </div>
+                <!-- 新闻li列表 -->
+                <div class="col-md-7">
+                    <div class="tab-content wjs_list">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】李克强主持中央应对疫情工作领导小组会议
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】习近平主持中央政治局常委会会议
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】湖北省武汉市等地近期陆续发生新型冠状病毒感染
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】解放军多型战机“绕台飞行”轰6K挂载巨大导弹出镜
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】东盟两强的军工能否撑起其大国雄心
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】东盟两强的军工能否撑起其大国雄心
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.08</span>【微新闻】“300米万达·昆明双塔
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.08</span>【微新闻】厦门 17.31秒！师徒二
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.09</span>【微新闻】安徽发现的“虫梳”刷新
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】三亚万人保护沙滩
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.10</span>【微新闻】基里巴斯总统塔内希·马茂访问大华股份
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.08</span>【微新闻】东盟两强的军工能否撑起其大国雄心
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.01</span>【微新闻】天地伟业一体化解决方案助推青海公安“智慧法制”建设迈向新阶段
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.1.31</span>【微新闻】天地伟业受邀出席2019中国物联网产业大会共话物联
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.1.25</span>【微新闻】德生科技公共就业服务解决方案让就业创业更简单便捷
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.05</span>【微新闻】光网视与中移铁通签署战略合作协议
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.1.01</span>【微新闻】微波对射探测器的工作原理
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.2.05</span>【微新闻】东盟两强的军工能否撑起其大国雄心
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2019.2.10</span>【微新闻】无线消防报警设备之家用火灾报警系统
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2014.2.09</span>【微新闻】应用深度卷积神经网络的色织物缺陷检测系统
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2018.7.29</span>【微新闻】激光对射在防盗报警入侵报警系统的应用
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2019.1.18</span>【微新闻】工信部要求办手机卡要人脸识别
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2020.1.01</span>【微新闻】大华股份助力临沂北站全力打造智慧高铁站
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="hidden-sx">2019.11.17</span>【微新闻】倍特威视智慧交通助推交通安全整治
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 图片模板 -->
+    <script type="text/template" id="bannerTemp">
+        {{each list as value index}}
+        <div class="item {{index==0?'active' :''}}">
+            {{if inmodel}}
+            <a href="#" class="mobileImg">
+                <img src="./images/{{value.mobileImg}}" alt="...">
+            </a>
+            {{else}}
+            <a href="#" class="pcimg" style="background-image: url('./images/{{value.pcImg}}')">
+            </a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </script>
+    <!-- 标点模板 -->
+    <script type="text/template" id="bannerIndex">
+        {{each list as value index}}
+           <li data-target="#carousel-example-generic" data-slide-to="{{index}}" class="{{index == 0?'active':''}}"></li>
+        {{/each}}
+    </script>
+
+    <!-- bootstrap依赖于jquery,必须放前面 -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <!-- 加载所有的bootstrap插件 -->
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <!-- 添加引擎模板 -->
+    <script src="./js/template.js"></script>
+    <!-- 轮播图样式 -->
+    <script src="./js/wjs.index.js"></script>
+</body>
+
+</html>
